@@ -1,0 +1,90 @@
+/* Estilos padrão para dispositivos móveis (sem consulta de mídia) */
+
+@font-face {
+    font-family: titulo;
+    src: url('fonts/title/Aubange\ Belgium\ Regular.ttf');
+}
+
+@font-face {
+    font-family: content;
+    src: url('fonts/content/outras/Onion.otf');
+    /* src: url('fonts/content/outras/Sweet\ Signature.otf'); */
+}
+
+body {
+    box-sizing: border-box;
+    background-image: url('imagens/castelo.jpg');
+    background-size: cover; /* Cobrir toda a área do body */
+    background-position: center; /* Centralizar a imagem */
+    background-repeat: no-repeat; /* Não repetir a imagem */
+    background-color: #11110C;
+    color: #2b2c23;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header, main, footer {
+    text-align: center;
+    background-color: rgba(164, 132, 92, 0.7);
+    width: 100%;
+    flex-grow: 1; 
+}
+
+header {
+    font-family: titulo;
+    font-size: 1.5rem;
+}
+
+main, footer {
+    font-family: content;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+section {
+    display: flex;
+}
+
+p {
+    padding: 3.5%;
+    margin: 0;
+    border: 0;
+    padding-left: 2%;
+}
+
+#p2 {
+    margin-top: 9%;
+}
+
+a {
+    color: #35362d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a:hover {
+    color: #d4c59d;
+}
+
+/* Consulta de mídia para dispositivos maiores */
+@media screen and (min-width: 768px) {
+    header {
+        font-size: 2rem;
+    }
+    /* main, footer {
+        font-size: 2rem;
+    } */
+}
